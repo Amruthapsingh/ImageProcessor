@@ -1,0 +1,59 @@
+.image-editor-container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+.contain {object-fit: contain;}
+.cover {object-fit: cover;}
+.scale-down {object-fit: scale-down;}
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    grid-template-columns: 11% 33% 33% 20%;
+    grid-gap: 1%;
+    background-color: #dbdbdb;
+    padding: 1%;
+    height: fit-content;
+
+  }
+
+  .file-input {
+    margin-top: 10px;
+    width: 80%; /* Adjust the width as needed */
+  }
+
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 2%;
+    font-size: 20;
+  }
+
+  .left-half {
+    background-color: #f0f0f0;
+    padding: 1%;
+    flex-direction: row;
+  }
+  
+  .right-half {
+    background-color: #e0e0e0;
+    padding: 1%;
+    flex-direction: row;
+  }
+  
+  .right-half button {
+    margin-top: 10px;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .grid-image {
+    max-width: 400px;
+    max-height: 400px;
+  }
